@@ -56,4 +56,23 @@ git submodule add https://github.com/CaiJimmy/hugo-theme-stack themes/hugo-theme
 
 ### hugo-theme-luna
 
-<https://github.com/Ice-Hazymoon/hugo-theme-luna>
+这个主题我很喜欢，[作者的博客](https://imiku.me)也蛮有意思的。
+
+- 主题地址 <https://github.com/Ice-Hazymoon/hugo-theme-luna>
+- 在线示例 <https://hugo-theme-luna.imiku.me>
+
+安装前需要先安装`postcss`。
+
+```sh
+npm install postcss-cli -g
+```
+
+然后用 submodule 方式安装主题。
+
+```sh
+git submodule add -b master https://github.com/Ice-Hazymoon/hugo-theme-luna themes/hugo-theme-luna
+cd themes/hugo-theme-luna
+npm install --production
+```
+
+然后将主题里面的`config.yaml`复制一份出来，在此基础上修改配置。
